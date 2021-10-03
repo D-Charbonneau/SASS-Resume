@@ -1,4 +1,6 @@
 $img: "../Images";
+$emFont: 'Shadows Into Light', cursive;
+$mainFont: 'Overpass', sans-serif;
 
 @mixin xy($x, $y)
 {
@@ -20,5 +22,59 @@ body
         background-size: 110vw 50vh;
         background-position: -120px;
         box-shadow: 5px 5px 15px 5px #532e18;
+        .row
+        {
+            margin-top: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            
+            .panel
+            {
+                background-color: #00000007;
+                border-radius: 25px;
+                border: 2px solid #00000010;
+            }
+            .column
+            {
+                display: flex;
+                @include xy(40%, auto);
+                flex-direction: column;
+                align-items: center;
+                margin: 0px 10px;
+                padding: 20px 50px;
+                .row
+                {
+                    @include xy(100%, auto);
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-direction: row;
+                    font-family: $mainFont;
+                    font-size: 1em;
+                }
+                .logo
+                {
+                    height: 300px;
+                    width: 300px;
+                    border-radius: 100%;
+                    overflow: hidden;
+                    box-shadow: 5px 5px 15px 5px #acacac;
+                }
+                h1
+                {
+                    font-size: 5em;
+                    font-family: $emFont;
+                    padding-bottom: 10px;
+                    border-bottom: 5px dotted #00000044;
+                    display: inline;
+                }
+                h3
+                {
+                    margin-top: -15px;
+                    font-size: 1.5em;
+                    font-family: $mainFont;
+                }
+            }
+        }
     }
 }
