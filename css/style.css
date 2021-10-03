@@ -6,24 +6,25 @@ body {
 body .container {
   margin: 50px 0px 35px 0px;
   width: 90vw;
-  height: 170vh;
+  height: 150vh;
   background: scroll url(../Images/lined-paper.jpg) repeat-y #ffffff;
   background-size: 110vw 50vh;
   background-position: -120px;
   box-shadow: 5px 5px 15px 5px #532e18;
 }
-body .container .row {
+
+.row {
   margin-top: 45px;
   display: flex;
   justify-content: center;
   align-items: stretch;
 }
-body .container .row .panel {
+.row .panel {
   background-color: #00000007;
   border-radius: 25px;
   border: 2px solid #00000010;
 }
-body .container .row .column {
+.row .column {
   display: flex;
   width: 40%;
   height: auto;
@@ -32,40 +33,40 @@ body .container .row .column {
   margin: 0px 10px;
   padding: 20px 50px;
 }
-body .container .row .column .row {
+.row .column .row {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
 }
-body .container .row .column .row p, body .container .row .column .row h3 {
+.row .column .row p, .row .column .row h3 {
   font-family: "Overpass", sans-serif;
   font-size: 1.8vw;
   text-align: start;
   margin: 5px 0px;
   display: inline;
 }
-body .container .row .column .row h3 {
+.row .column .row h3 {
   font-size: 2.2vw;
 }
-body .container .row .column .logo {
+.row .column .logo {
   height: 300px;
   width: 300px;
   border-radius: 100%;
   overflow: hidden;
   box-shadow: 5px 5px 15px 5px #acacac;
 }
-body .container .row .column h1 {
+.row .column h1 {
   font-size: 6vw;
   font-family: "Shadows Into Light", cursive;
   padding-bottom: 10px;
   border-bottom: 5px dotted #00000044;
   display: inline;
 }
-body .container .row .column h3 {
+.row .column h3 {
   margin-top: -15px;
-  font-size: 1.75vw;
+  font-size: 1.8vw;
   font-family: "Overpass", sans-serif;
 }
 

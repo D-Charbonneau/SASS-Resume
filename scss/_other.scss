@@ -1,0 +1,24 @@
+
+@mixin xy($x, $y)
+{
+    width: $x;
+    height: $y;
+}
+
+body
+{
+    background: scroll url(#{$img}/pexels-fwstudio-172276.jpg) no-repeat center #ffffff;
+    display: flex;
+    justify-content: center;
+    
+    .container
+    {
+        margin: 50px 0px 35px 0px;
+        @include xy(90vw, 150vh);
+        background: scroll url(#{$img}/lined-paper.jpg) repeat-y #ffffff;
+        background-size: 110vw 50vh;
+        background-position: -120px;
+        box-shadow: 5px 5px 15px 5px #532e18;
+        
+    }
+}
