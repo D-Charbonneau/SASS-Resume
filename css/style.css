@@ -37,9 +37,17 @@ body .container .row .column .row {
   height: auto;
   display: flex;
   justify-content: flex-start;
-  flex-direction: row;
+  flex-direction: column;
+}
+body .container .row .column .row p, body .container .row .column .row h3 {
   font-family: "Overpass", sans-serif;
-  font-size: 1em;
+  font-size: 1.8vw;
+  text-align: start;
+  margin: 5px 0px;
+  display: inline;
+}
+body .container .row .column .row h3 {
+  font-size: 2.2vw;
 }
 body .container .row .column .logo {
   height: 300px;
@@ -49,7 +57,7 @@ body .container .row .column .logo {
   box-shadow: 5px 5px 15px 5px #acacac;
 }
 body .container .row .column h1 {
-  font-size: 5em;
+  font-size: 6vw;
   font-family: "Shadows Into Light", cursive;
   padding-bottom: 10px;
   border-bottom: 5px dotted #00000044;
@@ -57,7 +65,7 @@ body .container .row .column h1 {
 }
 body .container .row .column h3 {
   margin-top: -15px;
-  font-size: 1.5em;
+  font-size: 1.75vw;
   font-family: "Overpass", sans-serif;
 }
 
