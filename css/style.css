@@ -1,5 +1,16 @@
 body {
-  background-color: white;
+  background: scroll url(../Images/pexels-fwstudio-172276.jpg) no-repeat center #ffffff;
+  display: flex;
+  justify-content: center;
+}
+body .container {
+  margin: 50px 0px 35px 0px;
+  width: 90vw;
+  height: 170vh;
+  background: scroll url(../Images/lined-paper.jpg) repeat-y #ffffff;
+  background-size: 110vw 50vh;
+  background-position: -120px;
+  box-shadow: 5px 5px 15px 5px #532e18;
 }
 
 /*# sourceMappingURL=style.css.map */
